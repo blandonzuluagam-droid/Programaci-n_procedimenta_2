@@ -1,140 +1,319 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-     <link
+
+    <title>Menú Restaurante</title>
+
+    <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css"
-    />
+    >
+
     <link rel="stylesheet" href="../css/menu.css">
+
 </head>
+
+
 <body>
-    <span class="tag is-danger is-size-4">Platos fuertes</span>
-    <div class="card">
-  <header class="card-header">
-   <p class="card-header-title is-size-2">Platos fuertes</p>
-    <button class="card-header-icon" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </header>
-  <div class="card-content">
-    <div class="content">
-      <ul>
-        <li>Frijoles</li>
-        <li>Ajiaco</li>
-        <li>Mondongo</li>
-        <li>Carne de res</li>
-        <li>Carne de cerdo</li>
-        <li>Costillas</li>
-        <li>Chuletas</li>
-        <li>Punta de anca</li>
-        <li>Mojarra</li>
-      </ul>
-      <br />
-    </div>
-  </div>
-  <footer class="card-footer">
-    <a href="#" class="card-footer-item">pedir</a>
-  </footer>
+
+
+<!-- ================= PLATOS FUERTES ================= -->
+
+<span class="tag is-danger is-size-4">
+    Platos fuertes
+</span>
+
+
+<div class="card">
+
+<header class="card-header">
+
+<p class="card-header-title is-size-2">
+    Platos fuertes
+</p>
+
+</header>
+
+
+<div class="card-content">
+
+<div class="content">
+
+<ul>
+
+<li>Frijoles</li>
+<li>Ajiaco</li>
+<li>Mondongo</li>
+<li>Carne de res</li>
+<li>Carne de cerdo</li>
+<li>Costillas</li>
+<li>Chuletas</li>
+<li>Punta de anca</li>
+<li>Mojarra</li>
+
+</ul>
+
 </div>
 
-<span class="tag is-danger is-size-4">Bebidas</span>
-    <div class="card">
-  <header class="card-header">
-    <p class="card-header-title is-size-2">Bebidas</p>
-    <button class="card-header-icon" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </header>
-  <div class="card-content">
-    <div class="content">
-      <ul>
-        <li>Coca cola</li>
-        <li>Sprite</li>
-        <li>Hit</li>
-        <li>Pepsi</li>
-        <li>Limonada</li>
-        <li>Jugos en agua</li>
-        <li>Jugos en leche</li>
-        <li>Malteadas</li>
-        <li>Micheladas</li>
-      </ul>
-      <br />
-    </div>
-  </div>
-  <footer class="card-footer">
-    <a href="#" class="card-footer-item">pedir</a>
-  </footer>
 </div>
 
-<span class="tag is-danger is-size-4">Entradas</span>
-    <div class="card">
-  <header class="card-header">
-    <p class="card-header-title is-size-2">Entradas</p>
-    <button class="card-header-icon" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </header>
-  <div class="card-content">
-    <div class="content">
-      <ul>
-        <li>Papas a la francesa</li>
-        <li>Papas criollas</li>
-        <li>Huevos de codornis</li>
-        <li>Yuca frita</li>
-        <li>Dedos de queso</li>
-      </ul>
-      <br />
-      <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-    </div>
-  </div>
-  <footer class="card-footer">
-    <a href="#" class="card-footer-item">pedir</a>
-  </footer>
+
+<footer class="card-footer">
+
+<a href="#"
+class="card-footer-item"
+onclick="SeleccionarProducto('Frijoles')">
+
+Pedir
+
+</a>
+
+</footer>
+
 </div>
 
-<span class="tag is-danger is-size-4">Postres</span>
-    <div class="card">
-  <header class="card-header">
-    <p class="card-header-title is-size-2">Postres</p>
-    <button class="card-header-icon" aria-label="more options">
-      <span class="icon">
-        <i class="fas fa-angle-down" aria-hidden="true"></i>
-      </span>
-    </button>
-  </header>
-  <div class="card-content">
-    <div class="content">
-      <li>Postre de limon</li>
-      <li>Postre de milo</li>
-      <li>Postre de oreo</li>
-      <li>Postre de 3 leches</li>
-      <li>Postre de frutos rojos</li>
-      <br />
-    </div>
-  </div>
-  
-  <footer class="card-footer">
-    <a href="#" class="card-footer-item">pedir</a>
-  </footer>
 
-  <section class="section">
-    <div class="container">
-      <a href="../restaurante 2/restaurante/index.html">
-        <button class="button is-link is-fullwidth" type="button">
-          Volver al inicio
-        </button>
-      </a>
-    </div>
-  </section>
+
+
+
+<!-- ================= BEBIDAS ================= -->
+
+
+<span class="tag is-danger is-size-4">
+    Bebidas
+</span>
+
+
+<div class="card">
+
+
+<header class="card-header">
+
+<p class="card-header-title is-size-2">
+    Bebidas
+</p>
+
+</header>
+
+
+
+<div class="card-content">
+
+<div class="content">
+
+<ul>
+
+<li>Coca cola</li>
+<li>Sprite</li>
+<li>Hit</li>
+<li>Pepsi</li>
+<li>Limonada</li>
+<li>Jugos en agua</li>
+<li>Jugos en leche</li>
+<li>Malteadas</li>
+<li>Micheladas</li>
+
+</ul>
+
 </div>
+
+</div>
+
+
+<footer class="card-footer">
+
+<a href="#"
+class="card-footer-item"
+onclick="SeleccionarProducto('Coca cola')">
+
+Pedir
+
+</a>
+
+</footer>
+
+
+</div>
+
+
+
+
+
+
+<!-- ================= ENTRADAS ================= -->
+
+
+<span class="tag is-danger is-size-4">
+    Entradas
+</span>
+
+
+<div class="card">
+
+
+<header class="card-header">
+
+<p class="card-header-title is-size-2">
+    Entradas
+</p>
+
+</header>
+
+
+
+<div class="card-content">
+
+<div class="content">
+
+
+<ul>
+
+<li>Papas a la francesa</li>
+<li>Papas criollas</li>
+<li>Huevos de codorniz</li>
+<li>Yuca frita</li>
+<li>Dedos de queso</li>
+
+</ul>
+
+
+</div>
+
+</div>
+
+
+
+<footer class="card-footer">
+
+<a href="#"
+class="card-footer-item"
+onclick="SeleccionarProducto('Papas a la francesa')">
+
+Pedir
+
+</a>
+
+</footer>
+
+
+</div>
+
+
+
+
+
+
+
+<!-- ================= POSTRES ================= -->
+
+
+<span class="tag is-danger is-size-4">
+    Postres
+</span>
+
+
+<div class="card">
+
+
+<header class="card-header">
+
+<p class="card-header-title is-size-2">
+    Postres
+</p>
+
+</header>
+
+
+
+<div class="card-content">
+
+<div class="content">
+
+
+<ul>
+
+<li>Postre de limón</li>
+<li>Postre de milo</li>
+<li>Postre de oreo</li>
+<li>Postre de tres leches</li>
+<li>Postre de frutos rojos</li>
+
+
+</ul>
+
+
+</div>
+
+</div>
+
+
+
+<footer class="card-footer">
+
+
+<a href="#"
+class="card-footer-item"
+onclick="SeleccionarProducto('Postre de limón')">
+
+Pedir
+
+</a>
+
+
+</footer>
+
+
+</div>
+
+
+
+
+
+
+<!-- VOLVER -->
+
+<section class="section">
+
+<div class="container">
+
+
+<a href="../restaurante 2/restaurante/index.html">
+
+<button 
+class="button is-link is-fullwidth"
+type="button">
+
+Volver al inicio
+
+</button>
+
+
+</a>
+
+
+</div>
+
+</section>
+
+
+
+
+
+<!-- Librería SweetAlert2 -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<!-- Archivo JavaScript -->
+
+<script src="../restaurante 2/restaurante/JS/menu.js"></script>
+
+
+
 </body>
+
 </html>

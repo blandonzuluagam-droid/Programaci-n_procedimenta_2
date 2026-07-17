@@ -1,82 +1,107 @@
 <!DOCTYPE html>
 <html lang="es">
-  <link rel="stylesheet" href="../restaurante 2/restaurante/css/style.css">
-<script src="../restaurante 2/restaurante/css/style.css"></script>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Inventario</title>
 
-  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Hoja de estilos -->
+    <link rel="stylesheet" href="../restaurante 2/restaurante/css/style.css">
+
+    <title>Formulario de Inventario</title>
 </head>
+
 <body>
 
-  <div class="contenedor">
+    <div class="contenedor">
 
-    <h2>Formulario de Inventario</h2>
+        <h2>Formulario de Inventario</h2>
 
-    <form>
+        <form>
 
-      <div class="grupo">
-        <label for="codigo">Codigo Producto</label>
-        <input type="text" id="codigo" name="codigo" required>
-      </div>
-
-      <div class="grupo">
-        <label for="nombre">Nombre Producto</label>
-        <input type="text" id="nombre" name="nombre" required>
-      </div>
-
-      <div class="grupo">
-        <label for="cantidad">Cantidad Producto</label>
-        <input type="number" id="cantidad" name="cantidad" required>
-      </div>
-
-      <div class="grupo">
-        <label for="descripcion">Descripcion Producto</label>
-        <textarea id="descripcion" name="descripcion"></textarea>
-      </div>
-
-      <div class="grupo">
-        <label for="marca">Marca Producto</label>
-        <input type="text" id="marca" name="marca" required>
-      </div>
-
-      <div class="grupo">
-        <label for="valor">Valor Unitario</label>
-        <input type="number" id="valor" name="valor" required>
-      </div>
-
-      <div class="grupo">
-        <label for="categoria">Categoria Productos</label>
-        <select id="categoria" name="categoria" required>
-          <option value="">Seleccione una categoria</option>
-          <option>Tecnologia</option>
-          <option>Oficina</option>
-          <option>Hogar</option>
-          <option>Ropa</option>
-          <option>Otros</option>
-        </select>
-      </div>
-
-      <div class="grupo">
-        <label for="ubicacion">Ubicacion Producto</label>
-        <input type="text" id="ubicacion" name="ubicacion" required>
-      </div>
-
-      <button type="submit">Guardar Producto</button>
-
-    </form>
-
-    
-<div class="field">
-              <div class="control">
-                <a href="../restaurante 2/restaurante/index.html"><button class="button is-light is-fullwidth" type="button">Volver al inicio</button></a>
-              </div>
+            <!-- Código -->
+            <div class="grupo">
+                <label for="codigo">Código Producto</label>
+                <input type="text" id="codigo" name="codigo">
             </div>
-  </div>
 
+            <!-- Nombre -->
+            <div class="grupo">
+                <label for="nombre">Nombre Producto</label>
+                <input type="text" id="nombre" name="nombre">
+            </div>
 
-  
+            <!-- Cantidad -->
+            <div class="grupo">
+                <label for="cantidad">Cantidad Producto</label>
+                <input type="number" id="cantidad" name="cantidad">
+            </div>
+
+            <!-- Descripción -->
+            <div class="grupo">
+                <label for="descripcion">Descripción Producto</label>
+                <textarea id="descripcion" name="descripcion"></textarea>
+            </div>
+
+            <!-- Marca -->
+            <div class="grupo">
+                <label for="marca">Marca Producto</label>
+                <input type="text" id="marca" name="marca">
+            </div>
+
+            <!-- Valor -->
+            <div class="grupo">
+                <label for="valor">Valor Unitario</label>
+                <input type="number" id="valor" name="valor">
+            </div>
+
+            <!-- Categoría -->
+            <div class="grupo">
+                <label for="categoria">Categoría Producto</label>
+                <select id="categoria" name="categoria">
+                    <option value="">Seleccione una categoría</option>
+                    <option>Tecnología</option>
+                    <option>Oficina</option>
+                    <option>Hogar</option>
+                    <option>Ropa</option>
+                    <option>Otros</option>
+                </select>
+            </div>
+
+            <!-- Ubicación -->
+            <div class="grupo">
+                <label for="ubicacion">Ubicación Producto</label>
+                <input type="text" id="ubicacion" name="ubicacion">
+            </div>
+
+            <!-- Botón Guardar -->
+            <button type="button" onclick="ValidarDatos()">
+                Guardar Producto
+            </button>
+
+        </form>
+
+        <br>
+
+        <!-- Botón Volver -->
+        <div class="field">
+            <div class="control">
+                <a href="../restaurante 2/restaurante/index.html">
+                    <button class="button is-light is-fullwidth" type="button">
+                        Volver al inicio
+                    </button>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Librería SweetAlert2 -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Archivo JavaScript -->
+    <script src="../restaurante 2/restaurante/JS/inventario.js"></script>
+
 </body>
+
 </html>

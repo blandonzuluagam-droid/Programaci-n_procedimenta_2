@@ -1,80 +1,115 @@
 <!DOCTYPE html>
 <html lang="es">
-  <link rel="stylesheet" href="../restaurante 2/restaurante/css/style.css">
-  <script src="../restaurante 2/restaurante/JS/contabilidad.js"> </script>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Contabilidad</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../restaurante 2/restaurante/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <title>Formulario de Contabilidad</title>
 </head>
+
 <body>
 
 <section class="section">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-half">
+    <div class="container">
+        <div class="columns is-centered">
+            <div class="column is-half">
 
-        <div class="box">
-          <h2 class="title has-text-centered">Formulario de Contabilidad</h2>
+                <div class="box">
+                    <h2 class="title has-text-centered">Formulario de Contabilidad</h2>
 
-          <form>
+                    <form>
 
-            
-            <div class="field">
-              <label class="label">Ingresos</label>
-              <div class="control">
-                <input class="input" type="number" placeholder="Ingrese el valor de ingresos" required>
-              </div>
+                        <!-- Ingresos -->
+                        <div class="field">
+                            <label class="label">Ingresos</label>
+                            <div class="control">
+                                <input
+                                    class="input"
+                                    id="ingresos"
+                                    type="number"
+                                    placeholder="Ingrese el valor de ingresos">
+                            </div>
+                        </div>
+
+                        <!-- Egresos -->
+                        <div class="field">
+                            <label class="label">Egresos</label>
+                            <div class="control">
+                                <input
+                                    class="input"
+                                    id="egresos"
+                                    type="number"
+                                    placeholder="Ingrese el valor de egresos">
+                            </div>
+                        </div>
+
+                        <!-- Concepto -->
+                        <div class="field">
+                            <label class="label">Concepto</label>
+                            <div class="control">
+                                <input
+                                    class="input"
+                                    id="concepto"
+                                    type="text"
+                                    placeholder="Ingrese el concepto">
+                            </div>
+                        </div>
+
+                        <!-- Fecha -->
+                        <div class="field">
+                            <label class="label">Fecha</label>
+                            <div class="control">
+                                <input
+                                    class="input"
+                                    id="fecha"
+                                    type="date">
+                            </div>
+                        </div>
+
+                        <!-- Botón Guardar -->
+                        <div class="field">
+                            <div class="control">
+                                <button
+                                    type="button"
+                                    class="button is-primary is-fullwidth"
+                                    onclick="ValidarDatos()">
+                                    Guardar Registro
+                                </button>
+                            </div>
+                        </div>
+
+                        <!-- Botón Volver -->
+                        <div class="field">
+                            <div class="control">
+                                <a href="../restaurante 2/restaurante/index.html">
+                                    <button
+                                        type="button"
+                                        class="button is-light is-fullwidth">
+                                        Volver al inicio
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+
+                    </form>
+
+                </div>
+
             </div>
-
-            
-            <div class="field">
-              <label class="label">Egresos</label>
-              <div class="control">
-                <input class="input" type="number" placeholder="Ingrese el valor de egresos" required>
-              </div>
-            </div>
-
-            
-            <div class="field">
-              <label class="label">Concepto</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Ingrese el concepto" required>
-              </div>
-            </div>
-
-            
-            <div class="field">
-              <label class="label">Fecha</label>
-              <div class="control">
-                <input class="input" type="date" required>
-              </div>
-            </div>
-
-            
-            <div class="field">
-              <div class="control">
-                <button class="button is-primary is-fullwidth" type="submit">
-                  Guardar Registro
-                </button>
-              </div>
-            </div>
-
-            
-            <div class="field">
-              <div class="control">
-                <a href="../restaurante 2/restaurante/index.html"><button class="button is-light is-fullwidth" type="button">Volver al inicio</button></a>
-              </div>
-            </div>
-
-          </form>
         </div>
-
-      </div>
     </div>
-  </div>
 </section>
+
+<!-- Librería SweetAlert2 -->
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<!-- Archivo JavaScript -->
+<script src="../restaurante 2/restaurante/JS/contabilidad.js"></script>
 
 </body>
 </html>

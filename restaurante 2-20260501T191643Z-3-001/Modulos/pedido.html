@@ -1,105 +1,349 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Formulario de Pedido</title>
-  <link rel="stylesheet" href="../restaurante 2/restaurante/css/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Formulario de Pedido</title>
+
+    <link rel="stylesheet" href="../restaurante 2/restaurante/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+
 </head>
+
+
 <body>
 
+
 <section class="section">
-  <div id="formulario" class="container">
-    <div class="columns is-centered">
-      <div class="column is-half">
 
-        <div class="box">
-          <h2 class="title has-text-centered">Formulario de Pedido</h2>
+<div id="formulario" class="container">
 
-          <form>
+<div class="columns is-centered">
 
-            
-            <div class="field">
-              <label class="label">Nombre del Usuario</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Ingrese su nombre" required>
-              </div>
-            </div>
+<div class="column is-half">
 
-            
-            <div class="field">
-              <label class="label">Producto</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Ingrese el producto" required>
-              </div>
-            </div>
 
-            
-            <div class="field">
-              <label class="label">Cantidad</label>
-              <div class="control">
-                <input class="input" type="number" placeholder="Ingrese la cantidad" required>
-              </div>
-            </div>
+<div class="box">
 
-            
-            <div class="field">
-              <label class="label">Dirección</label>
-              <div class="control">
-                <input class="input" type="text" placeholder="Ingrese la dirección" required>
-              </div>
-            </div>
 
-            
-            <div class="field">
-              <label class="label">Teléfono</label>
-              <div class="control">
-                <input class="input" type="tel" placeholder="Ingrese su teléfono" required>
-              </div>
-            </div>
+<h2 class="title has-text-centered">
+Formulario de Pedido
+</h2>
 
-            
-            <div class="field">
-              <label class="label">Método de Pago</label>
-              <div class="control">
-                <div class="select is-fullwidth">
-                  <select required>
-                    <option value="">Seleccione</option>
-                    <option>Efectivo</option>
-                    <option>Tarjeta de Crédito</option>
-                    <option>Tarjeta Débito</option>
-                    <option>Transferencia</option>
-                  </select>
-                </div>
-              </div>
-            </div>
 
-            
-            <div class="field">
-              <div class="control">
-                <button class="button is-primary is-fullwidth" type="submit">
-                  Realizar Pedido
-                </button>
-              </div>
-            </div>
 
-            
-            <div class="field">
-              <div class="control">
-                <a href="../restaurante 2/restaurante/index.html"><button class="button is-light is-fullwidth" type="button"</button>
-                  
-                Volver al inicio</button></a>
-              </div>
-            </div>
+<form>
 
-          </form>
-        </div>
 
-      </div>
-    </div>
-  </div>
+
+<!-- Código Producto -->
+
+<div class="field">
+
+<label class="label">
+Código Producto
+</label>
+
+<div class="control">
+
+<input 
+class="input"
+id="codigoProducto"
+type="text"
+placeholder="Ingrese código del producto">
+
+</div>
+
+</div>
+
+
+
+
+<!-- Nombre Producto -->
+
+<div class="field">
+
+<label class="label">
+Nombre del Producto
+</label>
+
+<div class="control">
+
+<input 
+class="input"
+id="nombreProducto"
+type="text"
+placeholder="Ingrese el producto">
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Nombre Usuario -->
+
+<div class="field">
+
+<label class="label">
+Nombre del Usuario
+</label>
+
+<div class="control">
+
+<input 
+class="input"
+id="nombreUsuario"
+type="text"
+placeholder="Ingrese su nombre">
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Cantidad -->
+
+<div class="field">
+
+<label class="label">
+Cantidad
+</label>
+
+<div class="control">
+
+<input 
+class="input"
+id="cantidad"
+type="number"
+placeholder="Ingrese la cantidad">
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Dirección -->
+
+<div class="field">
+
+<label class="label">
+Dirección
+</label>
+
+<div class="control">
+
+<input 
+class="input"
+id="direccion"
+type="text"
+placeholder="Ingrese la dirección">
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Teléfono -->
+
+<div class="field">
+
+<label class="label">
+Teléfono
+</label>
+
+<div class="control">
+
+<input 
+class="input"
+id="telefono"
+type="tel"
+placeholder="Ingrese su teléfono">
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Método Pago -->
+
+<div class="field">
+
+<label class="label">
+Método de Pago
+</label>
+
+
+<div class="control">
+
+<div class="select is-fullwidth">
+
+
+<select id="metodoPago">
+
+
+<option value="">
+Seleccione
+</option>
+
+
+<option>
+Efectivo
+</option>
+
+
+<option>
+Tarjeta de Crédito
+</option>
+
+
+<option>
+Tarjeta Débito
+</option>
+
+
+<option>
+Transferencia
+</option>
+
+
+</select>
+
+
+</div>
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Valor Cancelar -->
+
+<div class="field">
+
+<label class="label">
+Valor a Cancelar
+</label>
+
+
+<div class="control">
+
+<input
+class="input"
+id="valorCancelar"
+type="number"
+placeholder="Ingrese el valor">
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Botón Guardar -->
+
+<div class="field">
+
+<div class="control">
+
+
+<button
+class="button is-primary is-fullwidth"
+type="button"
+onclick="ValidarDatos()">
+
+Realizar Pedido
+
+</button>
+
+
+</div>
+
+</div>
+
+
+
+
+
+<!-- Volver -->
+
+<div class="field">
+
+<div class="control">
+
+
+<a href="../restaurante 2/restaurante/index.html">
+
+
+<button 
+class="button is-light is-fullwidth"
+type="button">
+
+Volver al inicio
+
+</button>
+
+
+</a>
+
+
+</div>
+
+</div>
+
+
+
+</form>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
 </section>
 
+
+
+<!-- SweetAlert2 -->
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+
+<!-- JavaScript -->
+
+<script src="../restaurante 2/restaurante/JS/pedidos.js"></script>
+
+
 </body>
+
 </html>
