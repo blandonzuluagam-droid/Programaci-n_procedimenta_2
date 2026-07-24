@@ -269,3 +269,5 @@ function ValidarDatos() {
 
 
 }
+
+document.getElementById("Guardar2").onclick =ValidarDatos

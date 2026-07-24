@@ -301,3 +301,5 @@ function ValidarDatos() {
 
 
 }
+
+document.getElementById ("Guardar3").onclick =ValidarDatos;

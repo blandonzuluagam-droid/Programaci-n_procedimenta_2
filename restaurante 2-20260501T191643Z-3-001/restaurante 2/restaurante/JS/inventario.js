@@ -79,7 +79,11 @@ function ValidarDatos() {
 
     // Validar Valor
     if (valor == "") {
-        Swal.fire("Error", "Debe ingresar el valor unitario.", "error");
+        Swal.fire({
+        icon: "success",
+        title: "Registro exitoso",
+        text: "Todos los datos fueron validados correctamente."
+    });
         return;
     }
 
@@ -124,3 +128,5 @@ function ValidarDatos() {
     });
 
 }
+
+document.getElementById("btnGuardar").onclick = ValidarDatos;

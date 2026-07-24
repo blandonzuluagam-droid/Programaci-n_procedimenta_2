@@ -85,3 +85,5 @@ function ValidarDatos() {
     });
 
 }
+
+document.getElementById ("Guardar").onclick =ValidarDatos;
