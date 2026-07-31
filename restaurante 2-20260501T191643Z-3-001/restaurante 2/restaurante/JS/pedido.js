@@ -1,6 +1,3 @@
-// ==================================
-// Declaración de variables
-// ==================================
 
 let codigoProducto = "";
 let nombreProducto = "";
@@ -12,14 +9,10 @@ let metodoPago = "";
 let valorCancelar = "";
 
 
-// ==================================
-// Función para validar datos
-// ==================================
 
 function ValidarDatos() {
 
 
-    // Capturar valores de los campos
 
     codigoProducto = document.getElementById("codigoProducto").value;
     nombreProducto = document.getElementById("nombreProducto").value;
@@ -32,7 +25,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Código Producto
 
     if(codigoProducto.trim() == ""){
 
@@ -61,7 +53,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Nombre Producto
 
     if(nombreProducto.trim() == ""){
 
@@ -90,7 +81,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Nombre Usuario
 
     if(nombreUsuario.trim() == ""){
 
@@ -119,7 +109,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Cantidad
 
     if(cantidad == ""){
 
@@ -148,7 +137,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Dirección
 
     if(direccion.trim() == ""){
 
@@ -165,7 +153,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Teléfono
 
     if(telefono.trim() == ""){
 
@@ -194,7 +181,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Método de Pago
 
     if(metodoPago == ""){
 
@@ -211,7 +197,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Valor a Cancelar
 
     if(valorCancelar == ""){
 
@@ -240,10 +225,6 @@ function ValidarDatos() {
 
 
 
-    // ==================================
-    // Mostrar información en consola
-    // ==================================
-
     console.log("========== DATOS DEL PEDIDO ==========");
 
     console.log("Código Producto: " + codigoProducto);
@@ -257,7 +238,6 @@ function ValidarDatos() {
 
 
 
-    // Mensaje final
 
     Swal.fire({
 

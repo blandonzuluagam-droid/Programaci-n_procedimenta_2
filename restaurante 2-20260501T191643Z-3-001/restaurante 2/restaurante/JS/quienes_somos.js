@@ -1,6 +1,3 @@
-// ==================================
-// Mensaje de bienvenida
-// ==================================
 
 document.addEventListener("DOMContentLoaded", function () {
 

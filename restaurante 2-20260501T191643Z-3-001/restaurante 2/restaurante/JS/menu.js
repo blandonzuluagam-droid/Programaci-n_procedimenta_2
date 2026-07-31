@@ -1,14 +1,8 @@
-// ==================================
-// Declaración de variables
-// ==================================
 
 let producto = "";
 
 
 
-// ==================================
-// Función para seleccionar producto
-// ==================================
 
 function SeleccionarProducto(nombreProducto) {
 
@@ -17,7 +11,7 @@ function SeleccionarProducto(nombreProducto) {
 
 
 
-    // Validar que exista un producto seleccionado
+
 
     if(producto == "") {
 
@@ -38,7 +32,6 @@ function SeleccionarProducto(nombreProducto) {
 
 
 
-    // Mostrar información en consola
 
     console.log("========== PEDIDO DEL MENÚ ==========");
 
@@ -47,7 +40,6 @@ function SeleccionarProducto(nombreProducto) {
 
 
 
-    // Mensaje de confirmación
 
     Swal.fire({
 

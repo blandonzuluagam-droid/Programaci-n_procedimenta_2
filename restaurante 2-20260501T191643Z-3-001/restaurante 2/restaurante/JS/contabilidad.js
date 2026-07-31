@@ -1,19 +1,16 @@
-// Declaración de variables
+
 let ingresos = "";
 let egresos = "";
 let concepto = "";
 let fecha = "";
 
-// Función para validar los datos
 function ValidarDatos() {
 
-    // Capturar los valores de los campos
     ingresos = document.getElementById("ingresos").value;
     egresos = document.getElementById("egresos").value;
     concepto = document.getElementById("concepto").value;
     fecha = document.getElementById("fecha").value;
 
-    // Validar Ingresos
     if (ingresos === "") {
         Swal.fire({
             icon: "error",
@@ -32,7 +29,6 @@ function ValidarDatos() {
         return;
     }
 
-    // Validar Egresos
     if (egresos === "") {
         Swal.fire({
             icon: "error",
@@ -51,7 +47,6 @@ function ValidarDatos() {
         return;
     }
 
-    // Validar Concepto
     if (concepto.trim() === "") {
         Swal.fire({
             icon: "error",
@@ -61,7 +56,6 @@ function ValidarDatos() {
         return;
     }
 
-    // Validar Fecha
     if (fecha === "") {
         Swal.fire({
             icon: "error",
@@ -71,7 +65,6 @@ function ValidarDatos() {
         return;
     }
 
-    // Si todas las validaciones son correctas
     console.log("===== DATOS DE CONTABILIDAD =====");
     console.log("Ingresos: " + ingresos);
     console.log("Egresos: " + egresos);

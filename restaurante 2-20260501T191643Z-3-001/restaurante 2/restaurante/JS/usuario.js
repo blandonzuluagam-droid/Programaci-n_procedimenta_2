@@ -1,6 +1,3 @@
-// ==================================
-// Declaración de variables
-// ==================================
 
 let nombre = "";
 let apellido = "";
@@ -14,14 +11,11 @@ let fechaNacimiento = "";
 let password = "";
 
 
-// ==================================
-// Función para validar datos
-// ==================================
+
 
 function ValidarDatos() {
 
 
-    // Capturar información de los campos
 
     nombre = document.getElementById("nombre").value;
     apellido = document.getElementById("apellido").value;
@@ -35,8 +29,6 @@ function ValidarDatos() {
     password = document.getElementById("password").value;
 
 
-
-    // Validar Nombre
 
     if(nombre.trim() == ""){
 
@@ -63,7 +55,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Apellido
 
     if(apellido.trim() == ""){
 
@@ -90,8 +81,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Tipo Documento
-
     if(tipoDocumento == ""){
 
         Swal.fire(
@@ -105,7 +94,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Número Documento
 
     if(numeroDocumento == ""){
 
@@ -132,7 +120,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Teléfono
 
     if(telefono == ""){
 
@@ -171,7 +158,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Correo
 
     if(correo == ""){
 
@@ -198,7 +184,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Género
 
     if(genero == ""){
 
@@ -213,7 +198,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Cargo
 
     if(cargo.trim() == ""){
 
@@ -228,7 +212,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Fecha
 
     if(fechaNacimiento == ""){
 
@@ -243,7 +226,6 @@ function ValidarDatos() {
 
 
 
-    // Validar Contraseña
 
     if(password == ""){
 
@@ -270,9 +252,6 @@ function ValidarDatos() {
 
 
 
-    // ==================================
-    // Mostrar datos en consola
-    // ==================================
 
     console.log("========== DATOS DEL USUARIO ==========");
 
@@ -289,7 +268,7 @@ function ValidarDatos() {
 
 
 
-    // Mensaje final
+    
 
     Swal.fire({
 

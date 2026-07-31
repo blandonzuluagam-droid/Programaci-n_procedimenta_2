@@ -1,6 +1,3 @@
-// ================================
-// Declaración de variables
-// ================================
 
 let codigo = "";
 let nombre = "";
@@ -11,9 +8,6 @@ let valor = "";
 let categoria = "";
 let ubicacion = "";
 
-// ================================
-// Función para validar los datos
-// ================================
 
 function ValidarDatos() {
 
